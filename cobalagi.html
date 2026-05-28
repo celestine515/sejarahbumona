@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kebijakan Politik Era Reformasi</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+fontFamily: {
+heading: ['Fraunces', 'serif'],
+body: ['"DM Sans"', 'sans-serif'],
+}
+}
+}
+}
+</script>
+<style>
+body {
+font-family: 'DM Sans', sans-serif;
+overflow-x: hidden;
+}
+.bg-fixed-img {
+position: fixed;
+inset: 0;
+z-index: 0;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+.bg-fixed-img img {
+width: 100%; height: 100%; object-fit: cover;
+}
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #1a1a1a; }
+::-webkit-scrollbar-thumb { background: #c21820; border-radius: 4px; }
+@keyframes float-slow {
+0%, 100% { transform: translateY(0px) rotate(0deg); }
+50% { transform: translateY(-8px) rotate(1deg); }
+}
+.animate-float { animation: float-slow 6s ease-in-out infinite; }
+.screen-transition {
+transition: opacity 350ms cubic-bezier(0.4, 0, 0.2, 1), transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.dark-card {
+background: rgba(0, 0, 0, 0.75);
+backdrop-filter: blur(4px);
+}
+.dark-card-light {
+background: rgba(0, 0, 0, 0.6);
+backdrop-filter: blur(2px);
+}
+.kebijakan-text, .kebijakan-text p, .kebijakan-text h4 {
+color: #ffffff !important;
+}
+</style>
+</head>
+<body data-template-id="__page-root" class="min-h-screen relative flex flex-col justify-between selection:bg-red-600 selection:text-white">
+
+<!-- Fixed Background Image -->
+<div class="bg-fixed-img">
+  <img data-template-id="bg-image" src="ratata.jpg" loading="lazy" class="canva-image">
+</div>
+
+<!-- Decorative Top Trim -->
+<div class="w-full h-2 bg-gradient-to-r from-red-600 via-red-500 to-red-700 relative z-20"></div>
+
+<main class="w-full max-w-7xl mx-auto px-4 sm:px-6 py-8 flex-grow flex items-center justify-center relative z-10">
+
+<!-- COVER SCREEN -->
+<section id="screen-cover" class="screen-transition w-full max-w-4xl mx-auto py-6 flex flex-col items-center justify-center text-center">
+  <div class="dark-card rounded-3xl p-8 sm:p-12 w-full">
+    <div class="mb-6 inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-red-400/50 bg-red-900/40 text-red-200 text-xs sm:text-sm font-bold uppercase tracking-wider">
+      <i data-lucide="scroll" class="w-4 h-4 text-red-400"></i> <span>Arsip Dokumentasi & Sejarah Indonesia</span>
+    </div>
+    <!-- JUDUL BESAR WARNA PUTIH -->
+    <h1 class="font-heading text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight text-white">KEBIJAKAN POLITIK ERA REFORMASI</h1>
+    <div class="w-24 h-1 bg-gradient-to-r from-red-600 to-amber-500 my-6 rounded-full mx-auto"></div>
+    <p data-template-id="cover-subtitle" class="canva-text font-body text-sm sm:text-base md:text-lg max-w-2xl leading-relaxed mb-8 mx-auto"></p>
+    <!-- DESKRIPSI DI ATAS GAMBAR -->
+    <p class="text-white font-body text-sm sm:text-base md:text-lg max-w-2xl mx-auto mb-6 leading-relaxed">Analisis interaktif transisi kekuasaan, kebebasan pers, pemilu demokratis, dan reformasi struktural pemerintahan Indonesia pasca 1998.</p>
+    <div class="w-full max-w-lg aspect-[16/10] rounded-2xl overflow-hidden border-4 border-white/20 shadow-xl mb-10 relative mx-auto animate-float">
+      <img data-template-id="cover-image" src="images.jpg" loading="lazy" class="canva-image w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent"></div>
+    </div>
+    <button data-template-id="cover-btn" onclick="navigateTo('screen-infographic')" class="canva-button group relative inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-red-600 to-red-700 text-white font-bold text-base sm:text-lg rounded-full shadow-lg hover:shadow-red-600/25 transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-black">
+      <span class="relative z-10 flex items-center gap-2"> Mulai Eksplorasi <i data-lucide="compass" class="w-5 h-5 transition-transform duration-300 group-hover:rotate-45"></i> </span>
+    </button>
+  </div>
+</section>
+
+<!-- INFOGRAPHIC SCREEN -->
+<section id="screen-infographic" class="screen-transition hidden opacity-0 scale-95 w-full py-6 flex flex-col items-center justify-center">
+  <div class="w-full max-w-4xl mx-auto dark-card rounded-3xl p-6">
+    <div class="w-full aspect-auto rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20">
+      <img data-template-id="infographic-fullpage" src="Poster.jpg" loading="lazy" class="canva-image w-full h-auto object-cover">
+    </div>
+    <div class="mt-10 flex justify-center gap-4">
+      <button data-template-id="infographic-back-btn" onclick="navigateTo('screen-cover')" class="canva-button inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold rounded-full transition-all duration-300 hover:scale-105"> <i data-lucide="arrow-left" class="w-4 h-4"></i> </button>
+      <button data-template-id="infographic-next-btn" onclick="navigateTo('screen-selection')" class="canva-button inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-red-600 to-red-700 text-white font-bold rounded-full shadow-lg transition-all duration-300 hover:scale-105"> <span>Lanjut ke Daftar Presiden</span> <i data-lucide="chevron-right" class="w-5 h-5"></i> </button>
+    </div>
+  </div>
+</section>
+
+<!-- SELECTION SCREEN -->
+<section id="screen-selection" class="screen-transition hidden opacity-0 scale-95 w-full py-6 flex flex-col">
+  <div class="dark-card rounded-3xl p-8 mb-8 text-center">
+    <h2 data-template-id="selection-title" class="canva-text font-heading text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">PETA PEMIMPIN REFORMASI</h2>
+    <p data-template-id="selection-subtitle" class="canva-text font-body mt-3 text-xs sm:text-sm md:text-base max-w-2xl mx-auto text-white">Pilih salah satu Presiden Republik Indonesia untuk membuka arsip kebijakan politik yang membawa perubahan besar bagi negeri.</p>
+  </div>
+  <div class="relative w-full py-4 max-w-5xl mx-auto">
+    <div class="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-red-400/40 via-red-500/60 to-red-400/40 hidden md:block"></div>
+    <div class="space-y-12 md:space-y-16 relative z-10">
+      <!-- Habibie -->
+      <div class="flex flex-col md:flex-row items-center w-full group/node">
+        <div class="w-full md:w-1/2 flex justify-center md:justify-end md:pr-10">
+          <button onclick="navigateTo('screen-detail-habibie')" data-template-id="habibie-bubble" class="canva-card text-center md:text-right max-w-md w-full p-6 dark-card border border-white/10 rounded-3xl transition-all duration-300 hover:border-red-500 hover:shadow-xl hover:scale-[1.02] group focus:outline-none flex flex-col items-center md:items-end">
+            <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-4 border-red-600 shadow-md mb-4 flex-shrink-0 transition-transform duration-300 group-hover:scale-105">
+              <img data-template-id="habibie-thumb" src="HabibieProfil.jpg" loading="lazy" class="canva-image w-full h-full object-cover">
+            </div>
+            <span data-template-id="habibie-tag" class="canva-tag text-xs font-bold bg-red-900/50 border border-red-500/30 px-3 py-1 rounded-full uppercase tracking-wider mb-2 text-white">Presiden ke-3</span>
+            <h3 data-template-id="habibie-name" class="canva-text font-heading text-lg sm:text-xl font-bold group-hover:text-red-400 transition-colors duration-200 text-white">Prof. Dr. B. J. Habibie</h3>
+            <p data-template-id="habibie-term" class="canva-text font-body text-xs sm:text-sm mt-1 mb-4 text-white">21 Mei 1998 – 20 Oktober 1999</p>
+            <span class="text-xs text-red-400 font-bold group-hover:translate-x-1 md:group-hover:-translate-x-1 transition-transform duration-300 flex items-center gap-1"> Lihat Kebijakan <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i> </span>
+          </button>
+        </div>
+        <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-red-900/50 border-4 border-red-600 shadow-md hidden md:flex items-center justify-center transition-all duration-300 group-hover/node:scale-125"><div class="w-2 h-2 rounded-full bg-red-400"></div></div>
+        <div class="w-full md:w-1/2 hidden md:block"></div>
+      </div>
+      <!-- Gus Dur -->
+      <div class="flex flex-col md:flex-row-reverse items-center w-full group/node">
+        <div class="w-full md:w-1/2 flex justify-center md:justify-start md:pl-10">
+          <button onclick="navigateTo('screen-detail-gusdur')" data-template-id="gusdur-bubble" class="canva-card text-center md:text-left max-w-md w-full p-6 dark-card border border-white/10 rounded-3xl transition-all duration-300 hover:border-red-500 hover:shadow-xl hover:scale-[1.02] group focus:outline-none flex flex-col items-center md:items-start">
+            <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-4 border-red-600 shadow-md mb-4 flex-shrink-0 transition-transform duration-300 group-hover:scale-105">
+              <img data-template-id="gusdur-thumb" src="GusdurProfil.jpg" loading="lazy" class="canva-image w-full h-full object-cover">
+            </div>
+            <span data-template-id="gusdur-tag" class="canva-tag text-xs font-bold bg-red-900/50 border border-red-500/30 px-3 py-1 rounded-full uppercase tracking-wider mb-2 text-white">Presiden ke-4</span>
+            <h3 data-template-id="gusdur-name" class="canva-text font-heading text-lg sm:text-xl font-bold group-hover:text-red-400 transition-colors duration-200 text-white">K. H. Abdurrahman Wahid</h3>
+            <p data-template-id="gusdur-term" class="canva-text font-body text-xs sm:text-sm mt-1 mb-4 text-white">20 Oktober 1999 – 23 Juli 2001</p>
+            <span class="text-xs text-red-400 font-bold group-hover:translate-x-1 transition-transform duration-300 flex items-center gap-1"> Lihat Kebijakan <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i> </span>
+          </button>
+        </div>
+        <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-red-900/50 border-4 border-red-600 shadow-md hidden md:flex items-center justify-center transition-all duration-300 group-hover/node:scale-125"><div class="w-2 h-2 rounded-full bg-red-400"></div></div>
+        <div class="w-full md:w-1/2 hidden md:block"></div>
+      </div>
+      <!-- Megawati -->
+      <div class="flex flex-col md:flex-row items-center w-full group/node">
+        <div class="w-full md:w-1/2 flex justify-center md:justify-end md:pr-10">
+          <button onclick="navigateTo('screen-detail-megawati')" data-template-id="megawati-bubble" class="canva-card text-center md:text-right max-w-md w-full p-6 dark-card border border-white/10 rounded-3xl transition-all duration-300 hover:border-red-500 hover:shadow-xl hover:scale-[1.02] group focus:outline-none flex flex-col items-center md:items-end">
+            <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-4 border-red-600 shadow-md mb-4 flex-shrink-0 transition-transform duration-300 group-hover:scale-105">
+              <img data-template-id="megawati-thumb" src="MegaProfil.jpg" loading="lazy" class="canva-image w-full h-full object-cover">
+            </div>
+            <span data-template-id="megawati-tag" class="canva-tag text-xs font-bold bg-red-900/50 border border-red-500/30 px-3 py-1 rounded-full uppercase tracking-wider mb-2 text-white">Presiden ke-5</span>
+            <h3 data-template-id="megawati-name" class="canva-text font-heading text-lg sm:text-xl font-bold group-hover:text-red-400 transition-colors duration-200 text-white">Megawati Soekarnoputri</h3>
+            <p data-template-id="megawati-term" class="canva-text font-body text-xs sm:text-sm mt-1 mb-4 text-white">23 Juli 2001 – 20 Oktober 2004</p>
+            <span class="text-xs text-red-400 font-bold group-hover:translate-x-1 md:group-hover:-translate-x-1 transition-transform duration-300 flex items-center gap-1"> Lihat Kebijakan <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i> </span>
+          </button>
+        </div>
+        <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-red-900/50 border-4 border-red-600 shadow-md hidden md:flex items-center justify-center transition-all duration-300 group-hover/node:scale-125"><div class="w-2 h-2 rounded-full bg-red-400"></div></div>
+        <div class="w-full md:w-1/2 hidden md:block"></div>
+      </div>
+      <!-- SBY -->
+      <div class="flex flex-col md:flex-row-reverse items-center w-full group/node">
+        <div class="w-full md:w-1/2 flex justify-center md:justify-start md:pl-10">
+          <button onclick="navigateTo('screen-detail-sby')" data-template-id="sby-bubble" class="canva-card text-center md:text-left max-w-md w-full p-6 dark-card border border-white/10 rounded-3xl transition-all duration-300 hover:border-red-500 hover:shadow-xl hover:scale-[1.02] group focus:outline-none flex flex-col items-center md:items-start">
+            <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-4 border-red-600 shadow-md mb-4 flex-shrink-0 transition-transform duration-300 group-hover:scale-105">
+              <img data-template-id="sby-thumb" src="SbyProfil.jpg" loading="lazy" class="canva-image w-full h-full object-cover">
+            </div>
+            <span data-template-id="sby-tag" class="canva-tag text-xs font-bold bg-red-900/50 border border-red-500/30 px-3 py-1 rounded-full uppercase tracking-wider mb-2 text-white">Presiden ke-6</span>
+            <h3 data-template-id="sby-name" class="canva-text font-heading text-lg sm:text-xl font-bold group-hover:text-red-400 transition-colors duration-200 text-white">Susilo Bambang Yudhoyono</h3>
+            <p data-template-id="sby-term" class="canva-text font-body text-xs sm:text-sm mt-1 mb-4 text-white">20 Oktober 2004 – 20 Oktober 2014</p>
+            <span class="text-xs text-red-400 font-bold group-hover:translate-x-1 transition-transform duration-300 flex items-center gap-1"> Lihat Kebijakan <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i> </span>
+          </button>
+        </div>
+        <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-red-900/50 border-4 border-red-600 shadow-md hidden md:flex items-center justify-center transition-all duration-300 group-hover/node:scale-125"><div class="w-2 h-2 rounded-full bg-red-400"></div></div>
+        <div class="w-full md:w-1/2 hidden md:block"></div>
+      </div>
+      <!-- Jokowi -->
+      <div class="flex flex-col md:flex-row items-center w-full group/node">
+        <div class="w-full md:w-1/2 flex justify-center md:justify-end md:pr-10">
+          <button onclick="navigateTo('screen-detail-jokowi')" data-template-id="jokowi-bubble" class="canva-card text-center md:text-right max-w-md w-full p-6 dark-card border border-white/10 rounded-3xl transition-all duration-300 hover:border-red-500 hover:shadow-xl hover:scale-[1.02] group focus:outline-none flex flex-col items-center md:items-end">
+            <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-4 border-red-600 shadow-md mb-4 flex-shrink-0 transition-transform duration-300 group-hover:scale-105">
+              <img data-template-id="jokowi-thumb" src="JokowiProfil.jpg" loading="lazy" class="canva-image w-full h-full object-cover">
+            </div>
+            <span data-template-id="jokowi-tag" class="canva-tag text-xs font-bold bg-red-900/50 border border-red-500/30 px-3 py-1 rounded-full uppercase tracking-wider mb-2 text-white">Presiden ke-7</span>
+            <h3 data-template-id="jokowi-name" class="canva-text font-heading text-lg sm:text-xl font-bold group-hover:text-red-400 transition-colors duration-200 text-white">Ir. H. Joko Widodo</h3>
+            <p data-template-id="jokowi-term" class="canva-text font-body text-xs sm:text-sm mt-1 mb-4 text-white">20 Oktober 2014 – 20 Oktober 2024</p>
+            <span class="text-xs text-red-400 font-bold group-hover:translate-x-1 md:group-hover:-translate-x-1 transition-transform duration-300 flex items-center gap-1"> Lihat Kebijakan <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i> </span>
+          </button>
+        </div>
+        <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-red-900/50 border-4 border-red-600 shadow-md hidden md:flex items-center justify-center transition-all duration-300 group-hover/node:scale-125"><div class="w-2 h-2 rounded-full bg-red-400"></div></div>
+        <div class="w-full md:w-1/2 hidden md:block"></div>
+      </div>
+    </div>
+  </div>
+  <div class="mt-16 text-center">
+    <button data-template-id="selection-back-btn" onclick="navigateTo('screen-cover')" class="canva-button inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold text-sm rounded-full transition-all duration-300 hover:scale-105"> <i data-lucide="arrow-left" class="w-4 h-4"></i> </button>
+  </div>
+</section>
+
+<!-- DETAIL HABIBIE -->
+<section id="screen-detail-habibie" class="screen-transition hidden opacity-0 scale-95 w-full max-w-5xl mx-auto py-6 flex flex-col justify-between">
+  <div class="dark-card rounded-3xl p-6 sm:p-8">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+      <div class="md:col-span-4 flex flex-col items-center md:items-start text-center md:text-left">
+        <div class="relative w-48 h-48 md:w-full md:h-auto md:aspect-square mb-6 rounded-2xl overflow-hidden border-4 border-white/20 shadow-lg">
+          <img data-template-id="det-hab-img" src="HabibieProfil.jpg" loading="lazy" class="canva-image w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+        </div>
+        <div class="w-full max-w-sm rounded-xl overflow-hidden shadow-md mb-6">
+          <img data-template-id="det-hab-poster" src="MasaBJ.jpg" loading="lazy" class="canva-image w-full h-auto object-cover">
+        </div>
+        <h2 data-template-id="det-hab-title" class="canva-text font-heading text-2xl sm:text-white font-bold tracking-tight">Prof. Dr. B. J. Habibie</h2>
+        <p data-template-id="det-hab-term" class="canva-text font-body font-bold text-xs sm:text-white mt-2 tracking-wider uppercase bg-red-900/50 border border-red-500/30 px-3 py-1 rounded-full">Periode: 21 Mei 1998 – 20 Oktober 1999</p>
+      </div>
+      <div class="md:col-span-8 space-y-6 kebijakan-text">
+        <div class="border-b-2 border-white/20 pb-3"><h3 class="font-heading text-xl font-bold text-white tracking-wide flex items-center gap-2"><i data-lucide="award" class="w-6 h-6 text-red-400"></i> Kebijakan Politik Utama</h3></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-red-600 border border-white/10"><h4 data-template-id="det-hab-p1-title" class="canva-text font-heading text-lg font-bold text-white">Kebebasan Pers (Pencabutan SIUPP)</h4><p data-template-id="det-hab-p1-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Mencabut kewajiban Surat Izin Usaha Penerbitan Pers (SIUPP), yang membuat media massa terbebas dari ancaman pembredelan dan sensor pemerintah.</p></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-red-600 border border-white/10"><h4 data-template-id="det-hab-p2-title" class="canva-text font-heading text-lg font-bold text-white">Sistem Multipartai (UU No. 2 Tahun 1999)</h4><p data-template-id="det-hab-p2-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Mengesahkan UU No. 2 Tahun 1999 yang menghapus monopoli satu partai dan melegalkan sistem multipartai, memungkinkan 48 partai politik bersaing pada Pemilu 1999.</p></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-red-600 border border-white/10"><h4 data-template-id="det-hab-p3-title" class="canva-text font-heading text-lg font-bold text-white">Pelepasan Tahanan Politik Era Orde Baru</h4><p data-template-id="det-hab-p3-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Membebaskan sejumlah tokoh dan tahanan politik era Orde Baru yang sebelumnya dipenjara karena pemikiran atau aktivitas oposisi yang dianggap mengancam.</p></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-red-600 border border-white/10"><h4 data-template-id="det-hab-p4-title" class="canva-text font-heading text-lg font-bold text-white">Pemisahan TNI/Polri (Dwifungsi)</h4><p data-template-id="det-hab-p4-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Memulai proses reformasi institusi keamanan dengan memisahkan Kepolisian Republik Indonesia (Polri) dari tubuh Angkatan Bersenjata Republik Indonesia (ABRI) untuk menghapus peran politik praktis militer.</p></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-red-600 border border-white/10"><h4 data-template-id="det-hab-p5-title" class="canva-text font-heading text-lg font-bold text-white">Otonomi Daerah (UU No. 22 & 25 Tahun 1999)</h4><p data-template-id="det-hab-p5-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Mengesahkan UU No. 22 Tahun 1999 tentang Pemerintahan Daerah dan UU No. 25 Tahun 1999 tentang Perimbangan Keuangan Pusat dan Daerah untuk mendesentralisasi kekuasaan dan keuangan.</p></div>
+        <div class="border-t-2 border-white/20 pt-3 mt-8"><h3 class="font-heading text-xl font-bold text-white tracking-wide flex items-center gap-2"><i data-lucide="globe" class="w-6 h-6 text-amber-400"></i> Kebijakan Politik Luar Negeri</h3></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-amber-600 border border-white/10"><h4 data-template-id="det-hab-p6-title" class="canva-text font-heading text-lg font-bold text-white">Referendum Timor Timur (1999)</h4><p data-template-id="det-hab-p6-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Mengizinkan opsi Referendum (Jajak Pendapat) bagi rakyat Timor Timur pada tahun 1999 untuk memilih antara otonomi luas atau kemerdekaan sepenuhnya.</p></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-amber-600 border border-white/10"><h4 data-template-id="det-hab-p7-title" class="canva-text font-heading text-lg font-bold text-white">Diplomasi Multilateral & Kerjasama Internasional</h4><p data-template-id="det-hab-p7-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Melanjutkan kerja sama dan memperbaiki hubungan dengan lembaga-lembaga keuangan internasional seperti Dana Moneter Internasional (IMF) dan Bank Dunia guna mengamankan dana talangan penyelamat krisis ekonomi.</p></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-amber-600 border border-white/10"><h4 data-template-id="det-hab-p8-title" class="canva-text font-heading text-lg font-bold text-white">Pemulihan Citra Internasional & Komitmen HAM</h4><p data-template-id="det-hab-p8-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Membuka ruang dialog dan menjalin komunikasi yang lebih cair dengan negara-negara barat serta komunitas internasional, untuk membuktikan komitmen Indonesia terhadap penegakan Hak Asasi Manusia (HAM) dan transisi demokrasi.</p></div>
+      </div>
+    </div>
+  </div>
+  <!-- Gallery Habibie -->
+  <div class="mt-16 pt-12 border-t-2 border-white/20">
+    <h3 class="font-heading text-2xl font-bold text-white tracking-wide mb-8 flex items-center gap-2"><i data-lucide="image" class="w-6 h-6 text-amber-400"></i> Galeri Dokumentasi</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch justify-items-center">
+      <button class="hab-doc-trigger group w-full h-full max-w-2xl cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-600 rounded-xl" data-doc-index="0"><div class="relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border-4 border-white/20 hover:border-red-600 group-hover:scale-[1.02]" style="aspect-ratio: 16/9;"><img data-template-id="det-hab-doc1" src="bj1.jpeg" loading="lazy" class="canva-image w-full h-full object-cover"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center"><i data-lucide="zoom-in" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i></div></div></button>
+      <button class="hab-doc-trigger group w-full h-full max-w-2xl cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-600 rounded-2xl" data-doc-index="1"><div class="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border-4 border-amber-600/50 hover:border-red-600 group-hover:scale-[1.02]" style="aspect-ratio: 16/9;"><img data-template-id="det-hab-doc2" src="bj2.jpeg" loading="lazy" class="canva-image w-full h-full object-cover"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center"><i data-lucide="zoom-in" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i></div></div></button>
+      <button class="hab-doc-trigger group w-full h-full max-w-2xl cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-600 rounded-lg" data-doc-index="2"><div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 border-4 border-white/20 hover:border-red-600 group-hover:scale-[1.02]" style="aspect-ratio: 16/9;"><img data-template-id="det-hab-doc3" src="bj3.jpeg" loading="lazy" class="canva-image w-full h-full object-cover"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center"><i data-lucide="zoom-in" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i></div></div></button>
+      <button class="hab-doc-trigger group w-full h-full max-w-2xl cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-600 rounded-3xl" data-doc-index="3"><div class="relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 border-4 border-red-600/50 hover:border-amber-600 group-hover:scale-[1.02]" style="aspect-ratio: 16/9;"><img data-template-id="det-hab-doc4" src="bj4.jpeg" loading="lazy" class="canva-image w-full h-full object-cover"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center"><i data-lucide="zoom-in" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i></div></div></button>
+      <button class="hab-doc-trigger group w-full h-full max-w-2xl cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-600 rounded-xl" data-doc-index="4"><div class="relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border-4 border-amber-500/50 hover:border-red-600 group-hover:scale-[1.02]" style="aspect-ratio: 16/9;"><img data-template-id="det-hab-doc5" src="bj5.jpeg" loading="lazy" class="canva-image w-full h-full object-cover"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center"><i data-lucide="zoom-in" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i></div></div></button>
+    </div>
+    <p class="text-center text-white/50 text-white mt-8 font-body italic">Koleksi foto dokumentasi resmi Presiden B.J. Habibie selama era reformasi 1998-1999</p>
+    <div id="hab-lightbox" class="fixed inset-0 bg-black/80 backdrop-blur-sm hidden z-50 flex items-center justify-center p-4"><div class="relative max-w-4xl w-full max-h-[85vh]"><img id="hab-lightbox-img" class="w-full h-full object-contain rounded-lg"><button id="hab-lightbox-close" class="absolute -top-10 right-0 text-white hover:text-red-400 transition-colors"><i data-lucide="x" class="w-8 h-8"></i></button></div></div>
+  </div>
+  <div class="flex justify-between items-center mt-12 pt-6 border-t border-white/20">
+    <button data-template-id="det-hab-back-btn" onclick="navigateTo('screen-selection')" class="canva-button inline-flex items-center gap-2 px-5 py-2.5 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold rounded-full transition-all duration-300 text-xs sm:text-sm"><i data-lucide="arrow-left" class="w-4 h-4"></i></button>
+    <button data-template-id="det-hab-next-btn" onclick="navigateTo('screen-detail-gusdur')" class="canva-button inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-red-600 to-red-700 text-white font-bold rounded-full shadow-md text-xs sm:text-sm">Lanjut ke Gus Dur →</button>
+  </div>
+</section>
+
+<!-- DETAIL GUS DUR -->
+<section id="screen-detail-gusdur" class="screen-transition hidden opacity-0 scale-95 w-full max-w-5xl mx-auto py-6 flex flex-col justify-between">
+  <div class="dark-card rounded-3xl p-6 sm:p-8">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+      <div class="md:col-span-4 flex flex-col items-center md:items-start text-center md:text-left">
+        <div class="relative w-48 h-48 md:w-full md:h-auto md:aspect-square mb-6 rounded-2xl overflow-hidden border-4 border-white/20 shadow-lg"><img data-template-id="det-gd-img" src="GusdurProfil.jpg" loading="lazy" class="canva-image w-full h-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div></div>
+        <div class="w-full max-w-sm rounded-xl overflow-hidden shadow-md mb-6"><img data-template-id="det-gd-poster" src="MasaGusdur.jpg" loading="lazy" class="canva-image w-full h-auto object-cover"></div>
+        <h2 data-template-id="det-gd-title" class="canva-text font-heading text-2xl sm:text-white font-bold tracking-tight">K. H. Abdurrahman Wahid</h2><p data-template-id="det-gd-term" class="canva-text font-body font-bold text-xs sm:text-white mt-2 tracking-wider uppercase bg-red-900/50 border border-red-500/30 px-3 py-1 rounded-full">Periode: 20 Oktober 1999 – 23 Juli 2001</p>
+      </div>
+      <div class="md:col-span-8 space-y-6 kebijakan-text">
+        <div class="border-b-2 border-white/20 pb-3"><h3 class="font-heading text-xl font-bold text-white tracking-wide flex items-center gap-2"><i data-lucide="award" class="w-6 h-6 text-red-400"></i> Kebijakan Politik Utama</h3></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-red-600 border border-white/10"><h4 data-template-id="det-gd-p1-title" class="canva-text font-heading text-lg font-bold text-white">Pemulihan Hak Sipil Tionghoa & Toleransi Beragama</h4><p data-template-id="det-gd-p1-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Mencabut instruksi presiden yang membatasi ekspresi kebudayaan Tionghoa, mengesahkan Hari Raya Imlek sebagai hari libur nasional, dan memulihkan hak budaya umat Konghucu.</p></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-red-600 border border-white/10"><h4 data-template-id="det-gd-p2-title" class="canva-text font-heading text-lg font-bold text-white">Pemisahan Institusi TNI & POLRI</h4><p data-template-id="det-gd-p2-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Memisahkan secara resmi institusi Kepolisian Republik Indonesia (POLRI) dari Angkatan Bersenjata (ABRI) untuk menegakkan profesionalisme kepolisian sipil mandiri.</p></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-red-600 border border-white/10"><h4 data-template-id="det-gd-p3-title" class="canva-text font-heading text-lg font-bold text-white">Pembubaran Departemen Penerangan & Dialog Aceh</h4><p data-template-id="det-gd-p3-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Mengedepankan jalan dialog damai di Aceh melalui program 'Jeda Kemanusiaan' bersama Gerakan Aceh Merdeka (GAM) di Swiss, serta mengakomodasi tuntutan otonomi daerah di Papua dengan pendekatan jangka panjang.</p></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-red-600 border border-white/10"><h4 data-template-id="det-gd-p4-title" class="canva-text font-heading text-lg font-bold text-white">Pemisahan TNI/Polri Menuju Profesionalisme Keamanan</h4><p data-template-id="det-gd-p4-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Memperkuat pemisahan secara resmi institusi Kepolisian dari ABRI untuk menegakkan profesionalisme kepolisian sipil mandiri (penguatan dari kebijakan sebelumnya).</p></div>
+        <div class="border-t-2 border-white/20 pt-3 mt-8"><h3 class="font-heading text-xl font-bold text-white tracking-wide flex items-center gap-2"><i data-lucide="globe" class="w-6 h-6 text-amber-400"></i> Kebijakan Politik Luar Negeri</h3></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-amber-600 border border-white/10"><h4 data-template-id="det-gd-p5-title" class="canva-text font-heading text-lg font-bold text-white">Diplomasi Keliling (Shuttle Diplomacy)</h4><p data-template-id="det-gd-p5-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Melakukan banyak kunjungan internasional ke berbagai negara di awal masa jabatannya untuk memulihkan citra Indonesia, meyakinkan dunia mengenai stabilitas keamanan nasional pasca krisis 1997-1998.</p></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-amber-600 border border-white/10"><h4 data-template-id="det-gd-p6-title" class="canva-text font-heading text-lg font-bold text-white">Kunjungan Perdana dan Perbaikan Hubungan dengan RRC</h4><p data-template-id="det-gd-p6-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Memperbaiki dan mempererat hubungan bilateral secara intensif dengan Republik Rakyat Tiongkok (RRC) untuk mengimbangi pengaruh kekuatan Barat serta memulihkan ekonomi nasional.</p></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-amber-600 border border-white/10"><h4 data-template-id="det-gd-p7-title" class="canva-text font-heading text-lg font-bold text-white">Gagasan Wacana Pembukaan Hubungan dengan Israel</h4><p data-template-id="det-gd-p7-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Mengusulkan wacana pembukaan hubungan diplomatik dengan Israel demi memediasi perdamaian antara Palestina dan Israel, meskipun kontroversial.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="mt-16 pt-12 border-t-2 border-white/20">
+    <h3 class="font-heading text-2xl font-bold text-white tracking-wide mb-8 flex items-center gap-2"><i data-lucide="image" class="w-6 h-6 text-amber-400"></i> Galeri Dokumentasi</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch justify-items-center">
+      <button class="gd-doc-trigger group w-full h-full max-w-2xl cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-600 rounded-xl" data-doc-index="0"><div class="relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border-4 border-white/20 hover:border-red-600 group-hover:scale-[1.02]" style="aspect-ratio: 16/9;"><img data-template-id="det-gd-doc1" src="gusdur1.jpeg" loading="lazy" class="canva-image w-full h-full object-cover"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center"><i data-lucide="zoom-in" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i></div></div></button>
+      <button class="gd-doc-trigger group w-full h-full max-w-2xl cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-600 rounded-2xl" data-doc-index="1"><div class="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border-4 border-amber-600/50 hover:border-red-600 group-hover:scale-[1.02]" style="aspect-ratio: 16/9;"><img data-template-id="det-gd-doc2" src="gusdur2.jpeg" loading="lazy" class="canva-image w-full h-full object-cover"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center"><i data-lucide="zoom-in" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i></div></div></button>
+      <button class="gd-doc-trigger group w-full h-full max-w-2xl cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-600 rounded-lg" data-doc-index="2"><div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 border-4 border-white/20 hover:border-red-600 group-hover:scale-[1.02]" style="aspect-ratio: 16/9;"><img data-template-id="det-gd-doc3" src="gusdur3.jpeg" loading="lazy" class="canva-image w-full h-full object-cover"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center"><i data-lucide="zoom-in" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i></div></div></button>
+    </div>
+    <p class="text-center text-white/50 text-xs mt-8 font-body italic">Koleksi foto dokumentasi resmi Presiden K.H. Abdurrahman Wahid</p>
+    <div id="gd-lightbox" class="fixed inset-0 bg-black/80 backdrop-blur-sm hidden z-50 flex items-center justify-center p-4"><div class="relative max-w-4xl w-full max-h-[85vh]"><img id="gd-lightbox-img" class="w-full h-full object-contain rounded-lg"><button id="gd-lightbox-close" class="absolute -top-10 right-0 text-white hover:text-red-400 transition-colors"><i data-lucide="x" class="w-8 h-8"></i></button></div></div>
+  </div>
+  <div class="flex justify-between items-center mt-12 pt-6 border-t border-white/20">
+    <button data-template-id="det-gd-back-btn" onclick="navigateTo('screen-selection')" class="canva-button inline-flex items-center gap-2 px-5 py-2.5 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold rounded-full transition-all duration-300 text-xs sm:text-sm"><i data-lucide="arrow-left" class="w-4 h-4"></i></button>
+    <button data-template-id="det-gd-next-btn" onclick="navigateTo('screen-detail-megawati')" class="canva-button inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-red-600 to-red-700 text-white font-bold rounded-full shadow-md text-xs sm:text-sm">Lanjut ke Megawati →</button>
+  </div>
+</section>
+
+<!-- DETAIL MEGAWATI -->
+<section id="screen-detail-megawati" class="screen-transition hidden opacity-0 scale-95 w-full max-w-5xl mx-auto py-6 flex flex-col justify-between">
+  <div class="dark-card rounded-3xl p-6 sm:p-8">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+      <div class="md:col-span-4 flex flex-col items-center md:items-start text-center md:text-left">
+        <div class="relative w-48 h-48 md:w-full md:h-auto md:aspect-square mb-6 rounded-2xl overflow-hidden border-4 border-white/20 shadow-lg"><img data-template-id="det-mega-img" src="MegaProfil.jpg" loading="lazy" class="canva-image w-full h-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div></div>
+        <div class="w-full max-w-sm rounded-xl overflow-hidden shadow-md mb-6"><img data-template-id="det-mega-poster" src="MasaMega.jpg" loading="lazy" class="canva-image w-full h-auto object-cover"></div>
+        <h2 data-template-id="det-mega-title" class="canva-text font-heading text-2xl sm:text-white font-bold tracking-tight">Megawati Soekarnoputri</h2><p data-template-id="det-mega-term" class="canva-text font-body font-bold text-xs sm:text-white mt-2 tracking-wider uppercase bg-red-900/50 border border-red-500/30 px-3 py-1 rounded-full">Periode: 23 Juli 2001 – 20 Oktober 2004</p>
+      </div>
+      <div class="md:col-span-8 space-y-6 kebijakan-text">
+        <div class="border-b-2 border-white/20 pb-3"><h3 class="font-heading text-xl font-bold text-white tracking-wide flex items-center gap-2"><i data-lucide="award" class="w-6 h-6 text-red-400"></i> Kebijakan Politik Dalam Negeri</h3></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-red-600 border border-white/10"><h4 data-template-id="det-mega-p1-title" class="canva-text font-heading text-lg font-bold text-white">Pendirian Komisi Pemberantasan Korupsi (KPK)</h4><p data-template-id="det-mega-p1-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Mengesahkan Undang-Undang Nomor 30 Tahun 2002 yang menjadi dasar pembentukan Komisi Pemberantasan Korupsi (KPK) untuk menangani kasus korupsi secara independen.</p></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-red-600 border border-white/10"><h4 data-template-id="det-mega-p2-title" class="canva-text font-heading text-lg font-bold text-white">Pemilu Langsung 2004</h4><p data-template-id="det-mega-p2-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Menyelenggarakan pemilihan umum demokratis pertama yang memungkinkan rakyat memilih presiden, wakil presiden, serta anggota legislatif secara langsung.</p></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-red-600 border border-white/10"><h4 data-template-id="det-mega-p3-title" class="canva-text font-heading text-lg font-bold text-white">Penyelesaian Konflik Aceh melalui CoHA</h4><p data-template-id="det-mega-p3-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Menerapkan pendekatan operasi militer sekaligus membuka ruang dialog melalui perjanjian Cessation of Hostilities Agreement (CoHA) di Jenewa pada akhir 2002.</p></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-red-600 border border-white/10"><h4 data-template-id="det-mega-p4-title" class="canva-text font-heading text-lg font-bold text-white">Kerjasama Kawasan & Partisipasi ASEAN</h4><p data-template-id="det-mega-p4-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Tetap berpartisipasi aktif dalam forum ASEAN untuk menjaga stabilitas, ekonomi, dan keamanan di kawasan Asia Tenggara dengan pendekatan bebas-aktif.</p></div>
+        <div class="border-t-2 border-white/20 pt-3 mt-8"><h3 class="font-heading text-xl font-bold text-white tracking-wide flex items-center gap-2"><i data-lucide="globe" class="w-6 h-6 text-amber-400"></i> Kebijakan Politik Luar Negeri</h3></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-amber-600 border border-white/10"><h4 data-template-id="det-mega-p5-title" class="canva-text font-heading text-lg font-bold text-white">Diplomasi Antiterorisme & Keamanan Regional</h4><p data-template-id="det-mega-p5-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Berkolaborasi dengan negara-negara mitra dalam memerangi terorisme internasional dan memperkuat keamanan regional melalui forum-forum multilateral.</p></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-amber-600 border border-white/10"><h4 data-template-id="det-mega-p6-title" class="canva-text font-heading text-lg font-bold text-white">Hubungan dengan IMF & Lembaga Keuangan Internasional</h4><p data-template-id="det-mega-p6-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Melanjutkan kerja sama dengan Dana Moneter Internasional (IMF) dan Bank Dunia untuk pemulihan ekonomi nasional dan pemenuhan syarat-syarat reformasi struktural.</p></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-amber-600 border border-white/10"><h4 data-template-id="det-mega-p7-title" class="canva-text font-heading text-lg font-bold text-white">Penguatan Keamanan Wilayah & Perbatasan</h4><p data-template-id="det-mega-p7-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Meningkatkan upaya pengamanan perbatasan maritim dan darat, serta memperkuat kehadiran negara di wilayah-wilayah terpencil untuk memastikan integritas territorial Indonesia.</p></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-amber-600 border border-white/10"><h4 data-template-id="det-mega-p8-title" class="canva-text font-heading text-lg font-bold text-white">Kerjasama Kawasan & Partisipasi ASEAN</h4><p data-template-id="det-mega-p8-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Memperdalam kerjasama regional melalui ASEAN Regional Forum, East Asia Summit, dan berbagai mekanisme dialog bilateral untuk menjaga stabilitas dan mempromosikan kepentingan Indonesia.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="mt-16 pt-12 border-t-2 border-white/20">
+    <h3 class="font-heading text-2xl font-bold text-white tracking-wide mb-8 flex items-center gap-2"><i data-lucide="image" class="w-6 h-6 text-amber-400"></i> Galeri Dokumentasi</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch justify-items-center">
+      <button class="mega-doc-trigger group w-full h-full max-w-2xl cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-600 rounded-xl" data-doc-index="0"><div class="relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border-4 border-white/20 hover:border-red-600 group-hover:scale-[1.02]" style="aspect-ratio: 16/9;"><img data-template-id="det-mega-doc1" src="mg1.jpeg" loading="lazy" class="canva-image w-full h-full object-cover"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center"><i data-lucide="zoom-in" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i></div></div></button>
+      <button class="mega-doc-trigger group w-full h-full max-w-2xl cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-600 rounded-2xl" data-doc-index="1"><div class="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border-4 border-amber-600/50 hover:border-red-600 group-hover:scale-[1.02]" style="aspect-ratio: 16/9;"><img data-template-id="det-mega-doc2" src="mg2.jpeg" loading="lazy" class="canva-image w-full h-full object-cover"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center"><i data-lucide="zoom-in" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i></div></div></button>
+      <button class="mega-doc-trigger group w-full h-full max-w-2xl cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-600 rounded-lg" data-doc-index="2"><div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 border-4 border-white/20 hover:border-red-600 group-hover:scale-[1.02]" style="aspect-ratio: 16/9;"><img data-template-id="det-mega-doc3" src="mg3.jpeg" loading="lazy" class="canva-image w-full h-full object-cover"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center"><i data-lucide="zoom-in" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i></div></div></button>
+      <button class="mega-doc-trigger group w-full h-full max-w-2xl cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-600 rounded-3xl" data-doc-index="3"><div class="relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 border-4 border-red-600/50 hover:border-amber-600 group-hover:scale-[1.02]" style="aspect-ratio: 16/9;"><img data-template-id="det-mega-doc4" src="mg4.jpeg" loading="lazy" class="canva-image w-full h-full object-cover"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center"><i data-lucide="zoom-in" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i></div></div></button>
+    </div>
+    <p class="text-center text-white/50 text-xs mt-8 font-body italic">Koleksi foto dokumentasi resmi Presiden Megawati Soekarnoputri</p>
+    <div id="mega-lightbox" class="fixed inset-0 bg-black/80 backdrop-blur-sm hidden z-50 flex items-center justify-center p-4"><div class="relative max-w-4xl w-full max-h-[85vh]"><img id="mega-lightbox-img" class="w-full h-full object-contain rounded-lg"><button id="mega-lightbox-close" class="absolute -top-10 right-0 text-white hover:text-red-400 transition-colors"><i data-lucide="x" class="w-8 h-8"></i></button></div></div>
+  </div>
+  <div class="flex justify-between items-center mt-12 pt-6 border-t border-white/20">
+    <button data-template-id="det-mega-back-btn" onclick="navigateTo('screen-selection')" class="canva-button inline-flex items-center gap-2 px-5 py-2.5 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold rounded-full transition-all duration-300 text-xs sm:text-sm"><i data-lucide="arrow-left" class="w-4 h-4"></i></button>
+    <button data-template-id="det-mega-next-btn" onclick="navigateTo('screen-detail-sby')" class="canva-button inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-red-600 to-red-700 text-white font-bold rounded-full shadow-md text-xs sm:text-sm">Lanjut ke SBY →</button>
+  </div>
+</section>
+
+<!-- DETAIL SBY -->
+<section id="screen-detail-sby" class="screen-transition hidden opacity-0 scale-95 w-full max-w-5xl mx-auto py-6 flex flex-col justify-between">
+  <div class="dark-card rounded-3xl p-6 sm:p-8">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+      <div class="md:col-span-4 flex flex-col items-center md:items-start text-center md:text-left">
+        <div class="relative w-48 h-48 md:w-full md:h-auto md:aspect-square mb-6 rounded-2xl overflow-hidden border-4 border-white/20 shadow-lg"><img data-template-id="det-sby-img" src="SbyProfil.jpg" loading="lazy" class="canva-image w-full h-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div></div>
+        <div class="w-full max-w-sm rounded-xl overflow-hidden shadow-md mb-6"><img data-template-id="det-sby-poster" src="MasaSby.jpg" loading="lazy" class="canva-image w-full h-auto object-cover"></div>
+        <h2 data-template-id="det-sby-title" class="canva-text font-heading text-2xl sm:text-white font-bold tracking-tight">Susilo Bambang Yudhoyono</h2><p data-template-id="det-sby-term" class="canva-text font-body font-bold text-xs sm:text-white mt-2 tracking-wider uppercase bg-red-900/50 border border-red-500/30 px-3 py-1 rounded-full">Periode: 20 Oktober 2004 – 20 Oktober 2014</p>
+      </div>
+      <div class="md:col-span-8 space-y-6 kebijakan-text">
+        <div class="border-b-2 border-white/20 pb-3"><h3 class="font-heading text-xl font-bold text-white tracking-wide flex items-center gap-2"><i data-lucide="award" class="w-6 h-6 text-red-400"></i> Kebijakan Politik Utama</h3></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-red-600 border border-white/10"><h4 data-template-id="det-sby-p1-title" class="canva-text font-heading text-lg font-bold text-white">Resolusi Damai Konflik Aceh (MoU Helsinki)</h4><p data-template-id="det-sby-p1-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Berhasil menandatangani pakta perdamaian MoU Helsinki 2005 untuk mengakhiri pertikaian bersenjata 30 tahun demi persatuan seutuhnya rakyat Serambi Mekkah.</p></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-red-600 border border-white/10"><h4 data-template-id="det-sby-p2-title" class="canva-text font-heading text-lg font-bold text-white">Program Bantuan Langsung Tunai (BLT) & Jaminan Sosial</h4><p data-template-id="det-sby-p2-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Menggulirkan jaring pengaman sosial terpadu seperti PNPM Mandiri, Jamkesmas, dan dana bantuan finansial langsung guna mengurangi kemiskinan ekstrem nasional.</p></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-red-600 border border-white/10"><h4 data-template-id="det-sby-p3-title" class="canva-text font-heading text-lg font-bold text-white">Stabilitas Ekonomi Global & Keanggotaan G20</h4><p data-template-id="det-sby-p3-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Membawa Indonesia pulih cepat dari gejolak ekonomi global, melunasi sisa kewajiban pinjaman asing secara mandiri, dan menempatkan posisi Indonesia di forum utama G20.</p></div>
+        <div class="border-t-2 border-white/20 pt-3 mt-8"><h3 class="font-heading text-xl font-bold text-white tracking-wide flex items-center gap-2"><i data-lucide="globe" class="w-6 h-6 text-amber-400"></i> Kebijakan Politik Luar Negeri</h3></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-amber-600 border border-white/10"><h4 data-template-id="det-sby-p4-title" class="canva-text font-heading text-lg font-bold text-white">Kebijakan Luar Negeri: Bebas Aktif & Multilateralisme</h4><p data-template-id="det-sby-p4-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Menerapkan prinsip 'Thousand Friends, Zero Enemy' dengan merangkul banyak negara sahabat dan meminimalisir musuh. Indonesia menjadi jembatan perdamaian dan memperkuat peran di forum internasional.</p></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-amber-600 border border-white/10"><h4 data-template-id="det-sby-p5-title" class="canva-text font-heading text-lg font-bold text-white">Diplomasi Multilateral & Kepemimpinan Regional</h4><p data-template-id="det-sby-p5-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Menginisiasi berbagai forum kerja sama internasional, menjadi negara pendiri Bali Democracy Forum (BDF), dan berperan aktif sebagai anggota G20 untuk memperkuat posisi Indonesia.</p></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-amber-600 border border-white/10"><h4 data-template-id="det-sby-p6-title" class="canva-text font-heading text-lg font-bold text-white">Kebijakan Outward Looking & Soft Power</h4><p data-template-id="det-sby-p6-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Mengedepankan soft power diplomasi untuk meningkatkan posisi tawar Indonesia di tingkat global, mempromosikan budaya, dan membangun kepercayaan dengan komunitas internasional.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="mt-16 pt-12 border-t-2 border-white/20">
+    <h3 class="font-heading text-2xl font-bold text-white tracking-wide mb-8 flex items-center gap-2"><i data-lucide="image" class="w-6 h-6 text-amber-400"></i> Galeri Dokumentasi</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch justify-items-center">
+      <button class="sby-doc-trigger group w-full h-full max-w-2xl cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-600 rounded-xl" data-doc-index="0"><div class="relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border-4 border-white/20 hover:border-red-600 group-hover:scale-[1.02]" style="aspect-ratio: 16/9;"><img data-template-id="det-sby-doc1" src="sby1.jpeg" loading="lazy" class="canva-image w-full h-full object-cover"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center"><i data-lucide="zoom-in" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i></div></div></button>
+      <button class="sby-doc-trigger group w-full h-full max-w-2xl cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-600 rounded-2xl" data-doc-index="1"><div class="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border-4 border-amber-600/50 hover:border-red-600 group-hover:scale-[1.02]" style="aspect-ratio: 16/9;"><img data-template-id="det-sby-doc2" src="sby2.jpeg" loading="lazy" class="canva-image w-full h-full object-cover"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center"><i data-lucide="zoom-in" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i></div></div></button>
+      <button class="sby-doc-trigger group w-full h-full max-w-2xl cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-600 rounded-lg" data-doc-index="2"><div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 border-4 border-white/20 hover:border-red-600 group-hover:scale-[1.02]" style="aspect-ratio: 16/9;"><img data-template-id="det-sby-doc3" src="sby3.jpeg" loading="lazy" class="canva-image w-full h-full object-cover"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center"><i data-lucide="zoom-in" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i></div></div></button>
+      <button class="sby-doc-trigger group w-full h-full max-w-2xl cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-600 rounded-3xl" data-doc-index="3"><div class="relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 border-4 border-red-600/50 hover:border-amber-600 group-hover:scale-[1.02]" style="aspect-ratio: 16/9;"><img data-template-id="det-sby-doc4" src="sby4.jpeg" loading="lazy" class="canva-image w-full h-full object-cover"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center"><i data-lucide="zoom-in" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i></div></div></button>
+    </div>
+    <p class="text-center text-white/50 text-xs mt-8 font-body italic">Koleksi foto dokumentasi resmi Presiden SBY</p>
+    <div id="sby-lightbox" class="fixed inset-0 bg-black/80 backdrop-blur-sm hidden z-50 flex items-center justify-center p-4"><div class="relative max-w-4xl w-full max-h-[85vh]"><img id="sby-lightbox-img" class="w-full h-full object-contain rounded-lg"><button id="sby-lightbox-close" class="absolute -top-10 right-0 text-white hover:text-red-400 transition-colors"><i data-lucide="x" class="w-8 h-8"></i></button></div></div>
+  </div>
+  <div class="flex justify-between items-center mt-12 pt-6 border-t border-white/20">
+    <button data-template-id="det-sby-back-btn" onclick="navigateTo('screen-selection')" class="canva-button inline-flex items-center gap-2 px-5 py-2.5 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold rounded-full transition-all duration-300 text-xs sm:text-sm"><i data-lucide="arrow-left" class="w-4 h-4"></i></button>
+    <button data-template-id="det-sby-next-btn" onclick="navigateTo('screen-detail-jokowi')" class="canva-button inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-red-600 to-red-700 text-white font-bold rounded-full shadow-md text-xs sm:text-sm">Lanjut ke Jokowi →</button>
+  </div>
+</section>
+
+<!-- DETAIL JOKOWI -->
+<section id="screen-detail-jokowi" class="screen-transition hidden opacity-0 scale-95 w-full max-w-5xl mx-auto py-6 flex flex-col justify-between">
+  <div class="dark-card rounded-3xl p-6 sm:p-8">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+      <div class="md:col-span-4 flex flex-col items-center md:items-start text-center md:text-left">
+        <div class="relative w-48 h-48 md:w-full md:h-auto md:aspect-square mb-6 rounded-2xl overflow-hidden border-4 border-white/20 shadow-lg"><img data-template-id="det-jok-img" src="JokowiProfil.jpg" loading="lazy" class="canva-image w-full h-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div></div>
+        <div class="w-full max-w-sm rounded-xl overflow-hidden shadow-md mb-6"><img data-template-id="det-jok-poster" src="MasaJokowi.jpg" loading="lazy" class="canva-image w-full h-auto object-cover"></div>
+        <h2 data-template-id="det-jok-title" class="canva-text font-heading text-2xl sm:text-white font-bold tracking-tight">Ir. H. Joko Widodo</h2><p data-template-id="det-jok-term" class="canva-text font-body font-bold text-xs sm:text-white mt-2 tracking-wider uppercase bg-red-900/50 border border-red-500/30 px-3 py-1 rounded-full">Periode: 20 Oktober 2014 – 20 Oktober 2024</p>
+      </div>
+      <div class="md:col-span-8 space-y-6 kebijakan-text">
+        <div class="border-b-2 border-white/20 pb-3"><h3 class="font-heading text-xl font-bold text-white tracking-wide flex items-center gap-2"><i data-lucide="award" class="w-6 h-6 text-red-400"></i> Kebijakan Politik Dalam Negeri</h3></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-red-600 border border-white/10"><h4 data-template-id="det-jok-p1-title" class="canva-text font-heading text-lg font-bold text-white">Pembangunan Infrastruktur Masif & Indonesia-Sentris</h4><p data-template-id="det-jok-p1-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Berlandaskan doktrin Nawacita, pemerintahannya menggenjot proyek strategis nasional seperti ribuan kilometer jalan tol, bandara, pelabuhan, bendungan, dan proyek strategis di luar Pulau Jawa untuk pemerataan pembangunan.</p></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-red-600 border border-white/10"><h4 data-template-id="det-jok-p2-title" class="canva-text font-heading text-lg font-bold text-white">Stabilitas Politik & Koalisi Gemuk</h4><p data-template-id="det-jok-p2-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Jokowi membangun koalisi pemerintahan yang sangat kuat di parlemen dengan merangkul sebagian besar partai oposisi, menciptakan stabilitas politik guna melancarkan berbagai agenda legislatif, termasuk pengesahan Undang-Undang Cipta Kerja melalui mekanisme omnibus law.</p></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-red-600 border border-white/10"><h4 data-template-id="det-jok-p3-title" class="canva-text font-heading text-lg font-bold text-white">Penyederhanaan Birokrasi & Digitalisasi Publik</h4><p data-template-id="det-jok-p3-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Mendorong reformasi birokrasi, pemangkasan perizinan investasi, serta digitalisasi pelayanan publik untuk mempermudah ekosistem berusaha di Indonesia dan meningkatkan efisiensi pemerintahan.</p></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-red-600 border border-white/10"><h4 data-template-id="det-jok-p4-title" class="canva-text font-heading text-lg font-bold text-white">Ibu Kota Negara (IKN) Nusantara</h4><p data-template-id="det-jok-p4-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Pemindahan ibu kota dari Jakarta ke Kalimantan Timur menjadi salah satu legacy politik dalam negeri terbesar, yang bertujuan untuk pemerataan ekonomi dan mengurangi beban demografi ibu kota lama.</p></div>
+        <div class="border-t-2 border-white/20 pt-3 mt-8"><h3 class="font-heading text-xl font-bold text-white tracking-wide flex items-center gap-2"><i data-lucide="globe" class="w-6 h-6 text-amber-400"></i> Kebijakan Politik Luar Negeri</h3></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-amber-600 border border-white/10"><h4 data-template-id="det-jok-p5-title" class="canva-text font-heading text-lg font-bold text-white">Poros Maritim Dunia</h4><p data-template-id="det-jok-p5-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Kebijakan luar negeri berfokus pada penguatan identitas maritim Indonesia, peningkatan konektivitas antar-pulau melalui Tol Laut, pengamanan wilayah perbatasan, dan diplomasi kelautan untuk menjadikan Indonesia Poros Maritim Dunia.</p></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-amber-600 border border-white/10"><h4 data-template-id="det-jok-p6-title" class="canva-text font-heading text-lg font-bold text-white">Pragmatisme & Diplomasi Ekonomi</h4><p data-template-id="det-jok-p6-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Pendekatan luar negeri diarahkan untuk menarik investasi asing, memperluas pasar ekspor, serta mendorong kerja sama infrastruktur strategis seperti Kereta Cepat Jakarta-Bandung bersama Tiongkok.</p></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-amber-600 border border-white/10"><h4 data-template-id="det-jok-p7-title" class="canva-text font-heading text-lg font-bold text-white">Hilirisasi Industri & Perlindungan Kepentingan Nasional</h4><p data-template-id="det-jok-p7-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Kebijakan luar negeri digunakan untuk melindungi kepentingan nasional, seperti larangan ekspor bijih nikel dan hilirisasi sumber daya alam. Kebijakan ini sempat memicu sengketa dagang di Organisasi Perdagangan Dunia (WTO).</p></div>
+        <div class="p-6 rounded-2xl dark-card-light border-l-4 border-l-amber-600 border border-white/10"><h4 data-template-id="det-jok-p8-title" class="canva-text font-heading text-lg font-bold text-white">Kepemimpinan Global & Diplomasi Perdamaian</h4><p data-template-id="det-jok-p8-desc" class="canva-text font-body text-xs sm:text-sm mt-2 leading-relaxed text-white">Indonesia memegang Presidensi G20 (2022) dan Keketuaan ASEAN (2023), serta aktif mendorong penyelesaian konflik damai internasional, termasuk kunjungan misi perdamaian ke Ukraina dan Rusia.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="mt-16 pt-12 border-t-2 border-white/20">
+    <h3 class="font-heading text-2xl font-bold text-white tracking-wide mb-8 flex items-center gap-2"><i data-lucide="image" class="w-6 h-6 text-amber-400"></i> Galeri Dokumentasi</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch justify-items-center">
+      <button class="jok-doc-trigger group w-full h-full max-w-2xl cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-600 rounded-xl" data-doc-index="0"><div class="relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border-4 border-white/20 hover:border-red-600 group-hover:scale-[1.02]" style="aspect-ratio: 16/9;"><img data-template-id="det-jok-doc1" src="joko1.jpeg" loading="lazy" class="canva-image w-full h-full object-cover"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center"><i data-lucide="zoom-in" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i></div></div></button>
+      <button class="jok-doc-trigger group w-full h-full max-w-2xl cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-600 rounded-2xl" data-doc-index="1"><div class="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border-4 border-amber-600/50 hover:border-red-600 group-hover:scale-[1.02]" style="aspect-ratio: 16/9;"><img data-template-id="det-jok-doc2" src="joko2.jpeg" loading="lazy" class="canva-image w-full h-full object-cover"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center"><i data-lucide="zoom-in" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i></div></div></button>
+      <button class="jok-doc-trigger group w-full h-full max-w-2xl cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-600 rounded-lg" data-doc-index="2"><div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 border-4 border-white/20 hover:border-red-600 group-hover:scale-[1.02]" style="aspect-ratio: 16/9;"><img data-template-id="det-jok-doc3" src="joko3.jpeg" loading="lazy" class="canva-image w-full h-full object-cover"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center"><i data-lucide="zoom-in" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i></div></div></button>
+      <button class="jok-doc-trigger group w-full h-full max-w-2xl cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-600 rounded-3xl" data-doc-index="3"><div class="relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 border-4 border-red-600/50 hover:border-amber-600 group-hover:scale-[1.02]" style="aspect-ratio: 16/9;"><img data-template-id="det-jok-doc4" src="joko4.jpeg" loading="lazy" class="canva-image w-full h-full object-cover"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center"><i data-lucide="zoom-in" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i></div></div></button>
+      <button class="jok-doc-trigger group w-full h-full max-w-2xl cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-600 rounded-xl" data-doc-index="4"><div class="relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border-4 border-amber-500/50 hover:border-red-600 group-hover:scale-[1.02]" style="aspect-ratio: 16/9;"><img data-template-id="det-jok-doc5" src="joko5.jpeg" loading="lazy" class="canva-image w-full h-full object-cover"><div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center"><i data-lucide="zoom-in" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i></div></div></button>
+    </div>
+    <p class="text-center text-white/50 text-xs mt-8 font-body italic">Koleksi foto dokumentasi resmi Presiden Joko Widodo</p>
+    <div id="jok-lightbox" class="fixed inset-0 bg-black/80 backdrop-blur-sm hidden z-50 flex items-center justify-center p-4"><div class="relative max-w-4xl w-full max-h-[85vh]"><img id="jok-lightbox-img" class="w-full h-full object-contain rounded-lg"><button id="jok-lightbox-close" class="absolute -top-10 right-0 text-white hover:text-red-400 transition-colors"><i data-lucide="x" class="w-8 h-8"></i></button></div></div>
+  </div>
+  <div class="flex justify-between items-center mt-12 pt-6 border-t border-white/20">
+    <button data-template-id="det-jok-back-btn" onclick="navigateTo('screen-selection')" class="canva-button inline-flex items-center gap-2 px-5 py-2.5 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold rounded-full transition-all duration-300 text-xs sm:text-sm"><i data-lucide="arrow-left" class="w-4 h-4"></i></button>
+    <button data-template-id="det-jok-next-btn" onclick="navigateTo('screen-video')" class="canva-button inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-red-600 to-red-700 text-white font-bold rounded-full shadow-md text-xs sm:text-sm"> <span>Video Era Reformasi</span> <i data-lucide="play" class="w-5 h-5"></i> </button>
+  </div>
+</section>
+
+<!-- VIDEO SCREEN - YouTube Videos -->
+<section id="screen-video" class="screen-transition hidden opacity-0 scale-95 w-full max-w-5xl mx-auto py-6 flex flex-col items-center justify-center">
+  <div class="w-full dark-card rounded-3xl p-8">
+    <div class="text-center mb-10">
+      <h2 data-template-id="video-title" class="canva-text font-heading text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-3 text-white">Video Dokumentasi Era Reformasi</h2>
+      <p data-template-id="video-subtitle" class="canva-text font-body text-sm sm:text-base max-w-2xl mx-auto text-white">Saksikan rekaman sejarah perjalanan demokrasi Indonesia dari masa ke masa.</p>
+      <p data-template-id="video-subtitle" class="canva-text font-body text-sm sm:text-base max-w-2xl mx-auto text-white">Video by Kelompok 17</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Video 1 -->
+      <div class="rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20">
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+          <iframe src="video.mp4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy"></iframe>
+        </div>
+      </div>
+      <!-- Video 2 -->
+      <div class="rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20">
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+          <iframe src="BjHabibi.mp4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy"></iframe>
+        </div>
+      </div>
+      <!-- Video 3 -->
+      <div class="rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20">
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+          <iframe src="Megaa.mp4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy"></iframe>
+        </div>
+      </div>
+      <!-- Video 4 -->
+      <div class="rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20">
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+          <iframe src="gusdur.mp4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy"></iframe>
+        </div>
+      </div>
+      <!-- Video 5 -->
+      <div class="rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20">
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+          <iframe src="SBYYY.mp4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy"></iframe>
+        </div>
+    </div>
+    <div class="mt-10 flex justify-center gap-4">
+      <button data-template-id="video-back-btn" onclick="navigateTo('screen-selection')" class="canva-button inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold rounded-full transition-all duration-300 hover:scale-105"><i data-lucide="arrow-left" class="w-4 h-4"></i></button>
+    </div>
+  </div>
+</section>
+
+<!-- CUSTOM MP4 VIDEO SCREEN -->
+<!-- PRIVATE VIDEO SCREEN (MP4 PRIBADI) -->
+<section id="screen-private-video" class="screen-transition hidden opacity-0 scale-95 w-full max-w-5xl mx-auto py-6 flex flex-col items-center justify-center">
+  <div class="w-full dark-card rounded-3xl p-8">
+    <div class="text-center mb-10">
+      <h2 class="font-heading text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-3 text-white">📹 Video Pribadi</h2>
+      <p class="font-body text-sm sm:text-base max-w-2xl mx-auto text-white">Dokumentasi eksklusif (format MP4)</p>
+    </div>
+    <div class="w-full max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20">
+      <video controls class="w-full h-auto" poster="thumbnail-video.jpg">
+        <source src="video-pribadi.mp4" type="video/mp4">
+        Browser Anda tidak mendukung pemutaran video.
+      </video>
+    </div>
+    <div class="mt-10 flex justify-center gap-4">
+      <button onclick="navigateTo('screen-video')" class="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold rounded-full transition-all duration-300 hover:scale-105">
+        <i data-lucide="arrow-left" class="w-4 h-4"></i> Kembali ke Video YouTube
+      </button>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="w-full relative z-10 py-8 border-t border-white/10 text-center font-body">
+  <div class="dark-card-light max-w-7xl mx-auto px-4 py-6 rounded-t-2xl flex flex-col items-center justify-center gap-3">
+    <p class="text-xs text-white/80 font-semibold">Kebijakan Politik Era Reformasi. Eksplorasi Digital Sejarah Indonesia</p>
+    <div class="text-xs text-white/80 space-y-1"><p>Disusun oleh :</p><p>Lintang Putri Liawan (19)</p><p>Virginia Mesaluna Ramdani (36)</p><p class="font-semibold text-white/80">XI KGS 2</p></div>
+  </div>
+</footer>
+
+<script>
+const screens = ['screen-cover','screen-infographic','screen-selection','screen-detail-habibie','screen-detail-gusdur','screen-detail-megawati','screen-detail-sby','screen-detail-jokowi','screen-video','screen-mp4'];
+
+function navigateTo(targetScreenId) {
+  const currentActiveScreen = screens.find(screen => {
+    const el = document.getElementById(screen);
+    return el && !el.classList.contains('hidden');
+  });
+  if (currentActiveScreen) {
+    const currentEl = document.getElementById(currentActiveScreen);
+    currentEl.classList.add('opacity-0', 'scale-95');
+    currentEl.classList.remove('opacity-100', 'scale-100');
+    setTimeout(() => { currentEl.classList.add('hidden'); revealTarget(targetScreenId); }, 350);
+  } else { revealTarget(targetScreenId); }
+}
+
+function revealTarget(targetScreenId) {
+  const targetEl = document.getElementById(targetScreenId);
+  if (!targetEl) return;
+  targetEl.classList.remove('hidden');
+  setTimeout(() => {
+    targetEl.classList.remove('opacity-0', 'scale-95');
+    targetEl.classList.add('opacity-100', 'scale-100');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, 50);
+}
+
+function setupLightbox(triggerClass, lightboxId, lightboxImgId, closeId, templatePrefix, count) {
+  const triggers = document.querySelectorAll('.' + triggerClass);
+  const lightbox = document.getElementById(lightboxId);
+  const lbImg = document.getElementById(lightboxImgId);
+  const lbClose = document.getElementById(closeId);
+  triggers.forEach(trigger => {
+    trigger.addEventListener('click', (e) => {
+      e.preventDefault();
+      const idx = parseInt(trigger.dataset.docIndex);
+      const img = document.querySelector('[data-template-id="' + templatePrefix + (idx + 1) + '"]');
+      if (img) { lbImg.src = img.src; lightbox.classList.remove('hidden'); }
+    });
+  });
+  lbClose.addEventListener('click', () => lightbox.classList.add('hidden'));
+  lightbox.addEventListener('click', (e) => { if (e.target === lightbox) lightbox.classList.add('hidden'); });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  lucide.createIcons();
+  setupLightbox('hab-doc-trigger', 'hab-lightbox', 'hab-lightbox-img', 'hab-lightbox-close', 'det-hab-doc', 5);
+  setupLightbox('gd-doc-trigger', 'gd-lightbox', 'gd-lightbox-img', 'gd-lightbox-close', 'det-gd-doc', 3);
+  setupLightbox('mega-doc-trigger', 'mega-lightbox', 'mega-lightbox-img', 'mega-lightbox-close', 'det-mega-doc', 4);
+  setupLightbox('sby-doc-trigger', 'sby-lightbox', 'sby-lightbox-img', 'sby-lightbox-close', 'det-sby-doc', 4);
+  setupLightbox('jok-doc-trigger', 'jok-lightbox', 'jok-lightbox-img', 'jok-lightbox-close', 'det-jok-doc', 5);
+});
+</script>
+
+<!-- MUSIC PLAYER SCRIPT: LOOPING TANPA HENTI -->
+<div id="music-control" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999; background: rgba(0,0,0,0.7); backdrop-filter: blur(8px); padding: 10px 15px; border-radius: 40px; display: flex; gap: 12px; align-items: center; border: 1px solid rgba(255,255,255,0.2); font-family: 'DM Sans', sans-serif;">
+  <button id="playPauseBtn" style="background: #c21820; border: none; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; color: white;">
+    <i data-lucide="play" id="playIcon" style="width: 18px; height: 18px;"></i>
+  </button>
+  <span id="musicStatus" style="color: white; font-size: 12px; font-weight: 500;">Musik mati</span>
+</div>
+
+<script>
+const LAGU_URL = 'lagunihbos.mp3';
+const audio = new Audio(LAGU_URL);
+audio.loop = true;
+audio.volume = 0.5;
+const playPauseBtn = document.getElementById('playPauseBtn');
+const playIcon = document.getElementById('playIcon');
+const musicStatus = document.getElementById('musicStatus');
+let isPlaying = false;
+
+function playMusic() {
+  audio.play().then(() => {
+    isPlaying = true;
+    playIcon.setAttribute('data-lucide', 'pause');
+    musicStatus.innerText = 'Musik';
+    lucide.createIcons();
+  }).catch(() => { musicStatus.innerText = 'Musik'; });
+}
+function pauseMusic() {
+  audio.pause();
+  isPlaying = false;
+  playIcon.setAttribute('data-lucide', 'play');
+  musicStatus.innerText = 'Musik';
+  lucide.createIcons();
+}
+playPauseBtn.addEventListener('click', () => { isPlaying ? pauseMusic() : playMusic(); });
+window.addEventListener('load', () => { audio.play().catch(() => { musicStatus.innerText = 'Klik tombol play'; lucide.createIcons(); }); });
+</script>
+</body>
+</html>
